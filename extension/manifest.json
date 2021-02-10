@@ -1,0 +1,19 @@
+{
+    "manifest_version": 3,
+    "name": "hederaDonut",
+    "description": "hederaDonut",
+    "version": "1.0.0",
+    "permissions": ["activeTab"],
+    "icons": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "icon.png",
+        "128": "icon.png"
+    },
+    "content_scripts": [{
+        "matches": ["https://*/*"],
+        "js": ["background.js"],
+        "css": ["background.css"],
+        "run_at": "document_idle"
+    }]
+}
